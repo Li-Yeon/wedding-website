@@ -3,6 +3,7 @@ import Image from 'next/image'
 
 // Assets
 import banner_image from '../public/frame.png';
+import banner_image_lg from '../public/frame-lg.png';
 import photo1 from '../public/photo1.jpeg';
 import photo2 from '../public/photo2.jpeg';
 import photo3 from '../public/photo3.jpeg';
@@ -26,14 +27,23 @@ export default function Home() {
 
         <div className='main-banner w-full relative'>
 
-          <div className="w-full flex justify-center md:hidden">
+
+          <div className="md:hidden w-full flex justify-center">
             <Image
               src={banner_image}
               alt="banner_image"
             />
           </div>
 
-          <div className="flex items-center w-full flex-col md:mt-10">
+          <div className="md:block absolute hidden top-0 left-0 z-10">
+            <Image
+              src={banner_image_lg}
+              alt="banner_image_lg"
+            />
+          </div>
+
+
+          <div className="flex items-center w-full flex-col md:pt-10">
 
             <p className='font-Nato text-lg font-[300] mt-1 text-transparent bg-clip-text bg-gradient-to-br from-gray-400 to-gray-900'>SAVE THE DATE</p>
             <p className='font-Nato text-4xl font-[400] mt-5 text-transparent bg-clip-text bg-gradient-to-br from-gray-400 to-gray-900'>Leon & Aya</p>
@@ -51,7 +61,7 @@ export default function Home() {
             <div className='flex mx-5 mt-5 gap-5'>
 
               <a href="https://forms.gle/EXwRCGMXHEWxVsu78" target="_blank" rel="noreferrer"
-              className='w-[100px] py-2 bg-gradient-to-bl from-yellow-400 to-yellow-700'>
+                className='w-[100px] py-2 bg-gradient-to-bl from-yellow-400 to-yellow-700'>
                 <p className='font-Nato text-center text-md text-white'>RSVP</p>
               </a>
 
@@ -64,9 +74,9 @@ export default function Home() {
           </div>
 
           <div id="galleries" className='mt-10'>
-            <p className='font-Display text-center text-4xl text-transparent bg-clip-text bg-gradient-to-br from-gray-400 to-gray-900'>Galleries</p>
+            <p className='font-Display text-center text-4xl md:text-3xl text-transparent bg-clip-text bg-gradient-to-br from-gray-400 to-gray-900'>Galleries</p>
 
-            <Carousel autoPlay infiniteLoop interval={2000} className="mt-3" stopOnHover>
+            <Carousel autoPlay infiniteLoop interval={2000} className="mt-3 max-w-[600px] max-h-[600px] mx-auto" stopOnHover>
               <div>
                 <Image src={photo1} />
               </div>
