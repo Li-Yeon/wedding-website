@@ -47,7 +47,7 @@ export default function Home() {
 
             <p className='font-Nato text-lg font-[300] mt-1 text-transparent bg-clip-text bg-gradient-to-br from-gray-400 to-gray-900'>SAVE THE DATE</p>
             <p className='font-Nato text-4xl font-[400] mt-5 text-transparent bg-clip-text bg-gradient-to-br from-gray-400 to-gray-900'>Leon & Aya</p>
-            <p className='font-Nato text-xs mt-5 text-transparent bg-clip-text bg-gradient-to-br from-gray-400 to-gray-900 text-center max-w-[200px]'>We are happy to see you amoung us on this meaningful day</p>
+            <p className='font-Nato text-xs mt-5 text-transparent bg-clip-text bg-gradient-to-br from-gray-400 to-gray-900 text-center max-w-[200px]'>We are happy to see you among us on this meaningful day</p>
 
             <p className='font-Vibes text-4xl mt-8 text-transparent bg-clip-text bg-gradient-to-br from-gray-400 to-gray-900'>Friday</p>
             <p className='font-Nato text-lg  text-transparent bg-clip-text bg-gradient-to-br from-gray-400 to-gray-900'>24.03.2023</p>
