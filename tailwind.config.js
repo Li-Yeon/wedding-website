@@ -9,9 +9,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        Montserrat: ['Montserrat'],
-        Oswald: ['Oswald'],
-        Poppins: ['Poppins']
+        Nato: ['Noto Serif Lao'],
+        Vibes: ['Great Vibes'],
+        Display: ['DM Serif Display']
       }
     },
   },
